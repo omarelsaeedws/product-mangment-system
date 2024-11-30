@@ -1,0 +1,166 @@
+/* Start Global Rules */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo", serif;
+  background-color: #222;
+  color: #fff;
+}
+
+.crud {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* End Global Rules */
+
+/* Start Head  */
+
+.crud .head {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+/* End Head  */
+
+/* Start Inputs  */
+
+.crud input {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: #111;
+  margin: 4px 0;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+.inputs input:focus {
+  background-color: #000;
+}
+
+.inputs .price input {
+  width: 20%;
+}
+
+.inputs .price #total {
+  background-color: #af0c0c;
+  padding: 4px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.inputs .price #total::before {
+  content: "Total: ";
+}
+
+button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #410441;
+  color: #fff;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #4d054d;
+  /* letter-spacing: 1px; */
+}
+
+#delete-all {
+  margin: 15px 0;
+}
+/* End Inputs  */
+
+/* Start Outputs  */
+
+.outputs .btn-search {
+  display: flex;
+  justify-content: space-between;
+}
+
+.outputs .btn-search button {
+  width: 45%;
+}
+
+.outputs table {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.outputs table th {
+  text-transform: uppercase;
+}
+
+.outputs table th,
+td {
+  padding: 5px;
+}
+
+/* End Outputs  */
+
+/* Mid Screen */
+@media screen and (max-width: 768px) {
+  .inputs .price input {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .outputs .btn-search button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .outputs table th,
+  .outputs table td {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+  .outputs table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Small Screen*/
+@media screen and (max-width: 480px) {
+  .crud {
+    padding: 10px;
+  }
+
+  .inputs input {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .outputs table th,
+  .outputs table td {
+    font-size: 12px;
+  }
+  .outputs table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
